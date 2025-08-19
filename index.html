@@ -1,51 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Quarterly Earnings Report</title>
-    <meta name="author" content="23f3004490@ds.study.iitm.ac.in">
-    <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css">
-    <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/solarized.css" id="theme">
-    <link rel="stylesheet" href="https://unpkg.com/highlight.js/styles/github.css">
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Q3 2025 Earnings Report</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reset.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/atom-one-dark.css" />
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
-        <!-- Title Slide with Speaker Notes -->
-        <section data-markdown>
-          <textarea data-template>
-# Quarterly Earnings Report
+        <section
+          data-markdown="slides.md"
+          data-separator="^\n---\n$"
+          data-separator-vertical="^\n--\n$"
+          data-separator-notes="^Note:"
+        ></section>
+      </div>
+    </div>
 
-**Prepared by:**  
-23f3004490@ds.study.iitm.ac.in
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/math/math.js"></script>
 
----
-
-<!-- .slide: data-background="#eee" -->
-## Key Highlights
-
-- Revenue up 18% <!-- .element: class="fragment" data-fragment-index="1" -->
-- Net income improved by 14% <!-- .element: class="fragment" data-fragment-index="2" -->
-- EPS: <strong>$2.34</strong> vs $2.05 last Q <!-- .element: class="fragment" data-fragment-index="3" -->
-
----
-
-## Financial Formula
-
-Total Returns:
-\[
-R_t = \frac{P_t - P_{t-1} + D_t}{P_{t-1}}
-\]
-
-Where:  
-\(R_t\)=Return,  
-\(P_t\)=End Price,  
-\(P_{t-1}\)=Start Price,  
-\(D_t\)=Dividends
-
----
-
-## Code Sample
-
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: true,
+        hash: true,
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX],
+      });
+    </script>
+  </body>
+</html>
