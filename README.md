@@ -6,7 +6,7 @@ Includes Markdown slides, code snippets, math equations, fragments, and speaker 
 ---
 
 ## 🚀 Live Presentation
-👉 [View on GitHub Pages](https://[USERNAME].github.io/earnings-report/)
+👉 [View on GitHub Pages](https://sadiatab1.github.io/earnings-report/)
 
 ---
 
