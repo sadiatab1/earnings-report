@@ -1,64 +1,77 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Quarterly Earnings Report</title>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-					<h1>Quarterly Earnings Report</h1>
-					<p>Presented by: 23f2000783@ds.study.iitm.ac.in</p>
-				</section>
+  <head>
+    <meta charset="utf-8">
+    <title>Quarterly Earnings Report</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+		  <h1>Quarterly Earnings Report</h1>
+		  <p>Presented by: 23f3004490@ds.study.iitm.ac.in</p>
+		</section>
+		  
+        <section data-markdown>
+          <textarea data-template>
+            ## Financial Highlights
+            - Revenue growth of 15% year-over-year.
+            - Net profit margin increased to 22%.
+            - Earnings per share (EPS) of $2.50.
+          </textarea>
+        </section>
 
-				<section data-markdown>
-					<textarea data-template>
-						## Financial Highlights
-						- Revenue growth of 15% year-over-year.
-						- Net profit margin increased to 22%.
-						- Earnings per share (EPS) of $2.50.
-					</textarea>
-				</section>
+        <section>
+          <h2>Key Metrics</h2>
+          <ul>
+            <li class="fragment">Customer Acquisition Cost (CAC) down by 10%</li>
+            <li class="fragment">Customer Lifetime Value (LTV) up by 20%</li>
+            <li class="fragment">Churn rate reduced to 5%</li>
+          </ul>
+        </section>
 
-				<section>
-					<h2>Key Metrics</h2>
-					<ul>
-						<li class="fragment">Customer Acquisition Cost (CAC) down by 10%</li>
-						<li class="fragment">Customer Lifetime Value (LTV) up by 20%</li>
-						<li class="fragment">Churn rate reduced to 5%</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Python Code for Analysis</h2>
-					<pre><code class="python" data-line-numbers="1-5">
+        <section>
+          <h2>Python Code for Analysis</h2>
+          <pre><code class="python" data-line-numbers="1-5">
 import pandas as pd
 
 df = pd.read_csv('earnings.csv')
 print(df.describe())
-					</code></pre>
-				</section>
+          </code></pre>
+        </section>
 
-				<section>
-					<h2>Financial Formula: Compound Interest</h2>
-					<p>
-						The formula for compound interest is:
-						\[ A = P(1 + \frac{r}{n})^{nt} \]
-					</p>
-					<aside class="notes">
-						Explain the variables: A is the future value, P is the principal, r is the annual interest rate, n is the number of times that interest is compounded per year, and t is the number of years the money is invested for.
-					</aside>
-				</section>
-			</div>
-		</div>
-		<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
-		<script>
-			Reveal.initialize({
-				plugins: [ RevealMarkdown ]
-			});
-		</script>
-	</body>
+        <section>
+          <h2>Financial Formula: Compound Interest</h2>
+          <p>
+            The formula for compound interest is:<br>
+            
+
+\[ A = P(1 + \frac{r}{n})^{nt} \]
+
+
+          </p>
+          <aside class="notes">
+            Explain the variables: A is the future value, P is the principal, r is the annual interest rate, n is the number of times that interest is compounded per year, and t is the number of years the money is invested for.
+          </aside>
+        </section>
+      </div>
+    </div>
+
+    <!-- RevealJS Core -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+
+    <!-- Plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+
+    <!-- Initialization -->
+    <script>
+      Reveal.initialize({
+        plugins: [ RevealMarkdown, RevealMath, RevealHighlight ]
+      });
+    </script>
+  </body>
 </html>
