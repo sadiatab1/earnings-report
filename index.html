@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Quarterly Earnings Report</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css" id="theme">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      
+      <!-- Markdown Slide -->
+      <section data-markdown="slides.md" data-separator="^\n---\n$" data-separator-vertical="^\n--\n$" data-separator-notes="^Note:"></section>
+
+      <!-- Code Highlighting -->
+      <section>
+        <h2>Financial Data Script</h2>
+        <pre><code class="language-python">
+import pandas as pd
+df = pd.read_csv("earnings.csv")
+print(df.describe())
+        </code></pre>
+        <aside class="notes">
+          Show stakeholders how analysts use Python to summarize earnings.
+        </aside>
+      </section>
+
+      <!-- Math Formula -->
+      <section>
+        <h2>Financial Formula</h2>
+        <p>\[
+        ROI = \frac{\text{Net Profit}}{\text{Total Investment}} \times 100
+        \]</p>
+        <aside class="notes">
+          Explain ROI with actual quarterly numbers.
+        </aside>
+      </section>
+
+      <!-- Animated fragments -->
+      <section>
+        <h2>Earnings Growth</h2>
+        <ul>
+          <li class="fragment">Q1: 15% Growth</li>
+          <li class="fragment">Q2: 20% Growth</li>
+          <li class="fragment">Q3: 12% Growth</li>
+          <li class="fragment">Q4: 18% Growth</li>
+        </ul>
+        <aside class="notes">
+          Reveal each growth figure gradually to keep focus.
+        </aside>
+      </section>
+
+      <!-- Contact -->
+      <section>
+        <h2>Contact</h2>
+        <p>Email: <strong>23f3004490@ds.study.iitm.ac.in</strong></p>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/math/math.js"></script>
+
+  <script>
+    Reveal.initialize({
+      hash: true,
+      plugins: [ RevealMarkdown, RevealHighlight, RevealMath ]
+    });
+  </script>
+</body>
+</html>
