@@ -6,15 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/theme/white.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/highlight/monokai.css">
 </head>
 <body>
   <div class="reveal">
     <div class="slides">
-      
-      <!-- Slide 1: Title -->
+
+      <!-- Slide 1: Title + Email -->
       <section>
         <h1>Quarterly Earnings Report</h1>
-        <p>Technical Consultant: 23f3004490@ds.study.iitm.ac.in</p>
+        <p>Prepared by: <strong>23f3004490@ds.study.iitm.ac.in</strong></p>
       </section>
 
       <!-- Slide 2: Markdown Slide -->
@@ -28,7 +29,7 @@
         </script>
       </section>
 
-      <!-- Slide 3: Fragments (Animated elements) -->
+      <!-- Slide 3: Animated fragments -->
       <section>
         <h2>Highlights</h2>
         <ul>
@@ -49,17 +50,32 @@ print(df["Revenue"].sum())
         </code></pre>
       </section>
 
-      <!-- Slide 5: Mathematical equation -->
+      <!-- Slide 5: Math equation -->
       <section>
         <h2>Financial Formula</h2>
         <p>Net Profit Margin:</p>
         <p>\( \text{NPM} = \frac{\text{Net Profit}}{\text{Revenue}} \times 100 \% \)</p>
       </section>
 
+      <!-- Slide 6: Speaker notes example -->
+      <section>
+        <h2>Key Takeaways</h2>
+        <ul>
+          <li class="fragment">Emphasize revenue growth</li>
+          <li class="fragment">Mention cost savings initiatives</li>
+        </ul>
+        <aside class="notes">
+          Highlight the Q2 growth, and explain how cost optimization improves net profit margin.
+        </aside>
+      </section>
+
     </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/markdown/markdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/math/math.js"></script>
   <script>
     Reveal.initialize({
       hash: true,
